@@ -1,0 +1,12 @@
+[project]
+name = "arkhamdb"
+version = "0.0.1"
+description = "诡镇奇谈后端，学习目的使用"
+authors = [
+    {name = "Agnes Digital", email = "Z735803792@163.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+
