@@ -1,7 +1,7 @@
-from pydantic import BaseModel
+from typing import TypedDict
 
 
-# class SpecialAlly(BaseModel):
+# class SpecialAlly(TypedDict):
 #     """特殊盟友类型"""
 
 #     ally_type: str
@@ -27,7 +27,7 @@ from pydantic import BaseModel
 #     """额外盟友"""
 
 
-class SpecialBase(BaseModel):
+class SpecialBase(TypedDict):
     is_sure: bool
     """必要还是不能"""
     hand_attribute: list[str]
@@ -36,7 +36,7 @@ class SpecialBase(BaseModel):
     """限制数量"""
 
 
-class Base(BaseModel):
+class Base(TypedDict):
     max_hand_points: int
     """最大部位"""
     any_hand_points: int
@@ -49,11 +49,11 @@ class Base(BaseModel):
     """特殊限制"""
 
 
-class Limitpart(BaseModel):
+class Limitpart(TypedDict):
     """基础限制数量"""
 
-    ally: int = 1
-    hand: int = 2
-    spells: int = 2
-    artifact: int = 1
-    other: int = -1
+    ally: int
+    hand: int
+    spells: int
+    artifact: int
+    other: int
