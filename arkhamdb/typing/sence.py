@@ -44,7 +44,7 @@ class Blood(TypedDict):
 
 
 class San(TypedDict):
-    """血量"""
+    """理智"""
 
     max_san_points: int
     """最大理智"""
@@ -65,3 +65,7 @@ class Player(TypedDict):
     ally: Ally
     ally_list: list
 
+class AllSence(TypedDict):
+    polt: PLOT
+    scene: SCENE
+    players: list[Player]
