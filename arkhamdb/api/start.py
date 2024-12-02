@@ -1,12 +1,10 @@
-
 from typing import Literal
 
 
 class Start:
     async def __init__(self):
         pass
-    
-    
+
     @classmethod
     async def start(
         cls,

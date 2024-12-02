@@ -8,6 +8,7 @@ class SupportCard(TypedDict):
     attribute: List[str]
     is_flash: bool
 
+
 class PlayerSupport(TypedDict):
     ally: List[SupportCard]
     hands: List[SupportCard]
