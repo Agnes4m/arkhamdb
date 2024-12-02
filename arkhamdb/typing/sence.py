@@ -65,6 +65,7 @@ class Player(TypedDict):
     ally: Ally
     ally_list: list
 
+
 class AllSence(TypedDict):
     polt: PLOT
     scene: SCENE

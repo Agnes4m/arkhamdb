@@ -5,6 +5,7 @@ from arkhamdb.typing.sence import *  # noqa: F403
 
 from typing import TypedDict
 
+
 class Game(TypedDict):
     """游戏"""
 
